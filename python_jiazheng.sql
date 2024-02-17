@@ -341,18 +341,6 @@ INSERT INTO `b_error_log` VALUES (4, '127.0.0.1', '/myapp/index/thing/getWishThi
 INSERT INTO `b_error_log` VALUES (5, '127.0.0.1', '/myapp/index/thing/getCollectThingList', 'GET', '操作失败User matching query does not exist.', '2024-01-23 15:25:00.488776');
 INSERT INTO `b_error_log` VALUES (6, '127.0.0.1', '/myapp/index/thing/getWishThingList', 'GET', '操作失败User matching query does not exist.', '2024-01-23 15:25:00.493437');
 
--- ----------------------------
--- Table structure for b_login_log
--- ----------------------------
-DROP TABLE IF EXISTS `b_login_log`;
-CREATE TABLE `b_login_log`  (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `ip` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `ua` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
-  `log_time` datetime(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of b_login_log
