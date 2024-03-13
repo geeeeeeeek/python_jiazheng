@@ -154,19 +154,6 @@
           </div>
           <div class="recommend" style="">
             <div class="title">热门推荐</div>
-            <div class="things">
-              <div class="thing-item thing-item" v-for="item in recommendData" @click="handleDetail(item)">
-                <div class="img-view"> <img :src="item.cover" /></div>
-                <div class="info-view">
-                  <h3 class="thing-name">{{ item.title.substring(0, 12) }}</h3>
-                  <span>
-                    <span class="a-price-symbol"></span>
-                    <span class="a-price">{{ item.price }}元/时</span>&nbsp;
-                    <span class="a-price">{{ item.location }}</span>
-                  </span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
